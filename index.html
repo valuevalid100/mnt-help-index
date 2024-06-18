@@ -50,17 +50,19 @@ const loginPage = '/jsp/login.jsp'
 const helpHomePage = '/app-help/html/'
 const tableBody = document.getElementById('tbl-body')
 const urlObject = [
-    {'url' : `<a href="http://${ipAddr}:361${loginPage}">http://${ipAddr}:361${loginPage}</a>`, 'title': 'ASN - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:481${loginPage}">http://${ipAddr}:481${loginPage}</a>`, 'title': 'ASN - Hanodale'},
-    {'url' : `<a href="http://${ipAddr}:131${loginPage}">http://${ipAddr}:131${loginPage}</a>`, 'title': 'ASN - Opine'},
-    {'url' : `<a href="http://${ipAddr}:281${loginPage}">http://${ipAddr}:281${loginPage}</a>`, 'title': 'EATS - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:136${loginPage}">http://${ipAddr}:136${loginPage}</a>`, 'title': 'EATS - Opine'},
-    {'url' : `<a href="http://${ipAddr}:341${loginPage}">http://${ipAddr}:341${loginPage}</a>`, 'title': 'EIT - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:382${loginPage}">http://${ipAddr}:382${loginPage}</a>`, 'title': 'IT - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:406${loginPage}">http://${ipAddr}:406${loginPage}</a>`, 'title': 'IT - Hanodale'},
-    {'url' : `<a href="http://${ipAddr}:431${loginPage}">http://${ipAddr}:431${loginPage}</a>`, 'title': 'MSP - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:356${loginPage}">http://${ipAddr}:356${loginPage}</a>`, 'title': 'MSPEIT - Mentdesk'},
-    {'url' : `<a href="http://${ipAddr}:501${helpHomePage}">http://${ipAddr}:501${helpHomePage}</a>`, 'title': 'Help App - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:361${loginPage}">http://${ipAddr}:361${loginPage}</a>`, 'title': 'ASN - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:191${loginPage}">http://${ipAddr}:191${loginPage}</a>`, 'title': 'ASN'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:481${loginPage}">http://${ipAddr}:481${loginPage}</a>`, 'title': 'ASN - Hanodale'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:131${loginPage}">http://${ipAddr}:131${loginPage}</a>`, 'title': 'ASN - Opine'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:81${loginPage}">http://${ipAddr}:81${loginPage}</a>`, 'title': 'ATS - DTCS'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:281${loginPage}">http://${ipAddr}:281${loginPage}</a>`, 'title': 'EATS - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:136${loginPage}">http://${ipAddr}:136${loginPage}</a>`, 'title': 'EATS - Opine'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:341${loginPage}">http://${ipAddr}:341${loginPage}</a>`, 'title': 'EIT - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:382${loginPage}">http://${ipAddr}:382${loginPage}</a>`, 'title': 'IT - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:406${loginPage}">http://${ipAddr}:406${loginPage}</a>`, 'title': 'IT - Hanodale'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:431${loginPage}">http://${ipAddr}:431${loginPage}</a>`, 'title': 'MSP - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:356${loginPage}">http://${ipAddr}:356${loginPage}</a>`, 'title': 'MSPEIT - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:501${helpHomePage}">http://${ipAddr}:501${helpHomePage}</a>`, 'title': 'Help App - Mentdesk'},
 ]
 window.onload = function() {
     let trs = '';
