@@ -30,9 +30,7 @@
 </style>
 </head>
 <body>
-
-<h2>Test Environment URLs</h2>
-
+<h2>Test Environment URLs - Mysql 8.4</h2>
 <table>
     <thead>
         <tr>
@@ -42,6 +40,18 @@
     </thead>
     <tbody id="tbl-body"></tbody>
 </table>
+    <hr /><br />
+<h2>Test Environment URLs</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Instance</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody id="tbl-body-old"></tbody>
+</table>
 
 </body>
 <script>
@@ -49,7 +59,14 @@ const ipAddr = '122.165.180.90'
 const loginPage = '/jsp/login.jsp'
 const helpHomePage = '/app-help/html/'
 const tableBody = document.getElementById('tbl-body')
+const tableBodyOld = document.getElementById('tbl-body-old')
 const urlObject = [
+    {'url' : `<a target="_blank" href="http://${ipAddr}:361${loginPage}">http://${ipAddr}:361${loginPage}</a>`, 'title': 'ASN - Mentdesk'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:481${loginPage}">http://${ipAddr}:191${loginPage}</a>`, 'title': 'ASN - DT'},
+    {'url' : `<a target="_blank" href="http://${ipAddr}:131${loginPage}">http://${ipAddr}:131${loginPage}</a>`, 'title': 'ASN - Hanodale'}
+]
+
+const urlObjectOld = [
     {'url' : `<a target="_blank" href="http://${ipAddr}:361${loginPage}">http://${ipAddr}:361${loginPage}</a>`, 'title': 'ASN - Mentdesk'},
     {'url' : `<a target="_blank" href="http://${ipAddr}:191${loginPage}">http://${ipAddr}:191${loginPage}</a>`, 'title': 'ASN'},
     {'url' : `<a target="_blank" href="http://${ipAddr}:481${loginPage}">http://${ipAddr}:481${loginPage}</a>`, 'title': 'ASN - Hanodale'},
@@ -64,10 +81,18 @@ const urlObject = [
     {'url' : `<a target="_blank" href="http://${ipAddr}:356${loginPage}">http://${ipAddr}:356${loginPage}</a>`, 'title': 'MSPEIT - Mentdesk'},
     {'url' : `<a target="_blank" href="http://${ipAddr}:501${helpHomePage}">http://${ipAddr}:501${helpHomePage}</a>`, 'title': 'Help App - Mentdesk'},
 ]
+    
 window.onload = function() {
     let trs = '';
     urlObject.forEach(i => trs += `<tr><td>${i.title}</td><td>${i.url}</td></tr>`)
     tableBody.innerHTML = trs;
+
+    let trsOld = '';
+    urlObjectOld.forEach(i => trsOld += `<tr><td>${i.title}</td><td>${i.url}</td></tr>`)
+    tableBodyOld.innerHTML = trsOld;
 }
+
+
+    
 </script>
 </html>
